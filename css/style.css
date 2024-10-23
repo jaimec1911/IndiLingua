@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f60;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu ul li a:hover {
+    background: orange; /* Cambia el color de fondo al pasar el mouse */
+    color: white; /* Cambia el color del texto */
+    transition: 0.3s ease, transform 0.3s ease; /* Añade una transición suave */
+    border-radius: 5px; /* Redondea las esquinas */
+    padding: 0.8rem 1.8rem; /* Aumenta el padding para hacer el efecto más grande */
+    transform: scale(1.05); /* Aumenta un poco el tamaño del botón */
+}
+
+.menu ul li a.active {
+    background: darkorange; /* Color de fondo para la opción activa */
+    color: white; /* Color de texto para la opción activa */
+    padding: 0.8rem 1.8rem; /* Asegúrate de que el padding sea el mismo */
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: rgb(14, 8, 68);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Sección Explora Nuevas Lenguas */
+.explora-lenguas {
+    padding: 3rem;
+    background-color: white;
+    text-align: left;
+}
+
+.explora-lenguas h2 {
+    text-align: left;
+    font-size: 2rem;
+    color: #F76D12; /* Naranja similar al que usaste */
+    margin-bottom: 2rem;
+}
+
+.explora-lenguas .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.explora-lenguas .texto {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #333; /* Color de texto gris oscuro */
+    padding-right: 0.5rem; /* Espacio entre texto e imagen */
+    line-height: 1.6; /* Mayor legibilidad */
+    text-align: justify;
+}
+
+.explora-lenguas .texto p {
+    margin-bottom: 1.5rem;
+}
+
+.explora-lenguas button {
+    padding: 0.8rem 1.5rem;
+    background-color: #F76D12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.explora-lenguas .imagen {
+    flex: 1;
+    display: flex;
+    justify-content: space-around; /* Asegura que la imagen esté alineada a la derecha */
+}
+
+.explora-lenguas img {
+    width: 40%; /* Ajusta el ancho de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para un diseño suave */
+}
+
+
+/* Sección Beneficios */
+.beneficios {
+    padding: 3rem;
+    background-color: #e2d9d9cb; /* Color de fondo ligero */
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 2rem;
+    color: #F76D12; /* Naranja */
+    margin-bottom: 1.5rem;
+}
+
+.beneficios p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 3rem; /* Separación del título respecto a los items */
+}
+
+.beneficios-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.beneficio-item {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow para darle profundidad */
+    transition: transform 0.3s ease-in-out;
+    width: 22%; /* Ajusta el ancho para que ocupen todo el espacio */
+}
+
+.beneficio-item:hover {
+    transform: translateY(-10px); /* Efecto hover para subir la tarjeta */
+}
+
+.beneficio-item img {
+    max-width: 80px; /* Ajusta el tamaño del ícono */
+    margin-bottom: 1rem;
+}
+
+.beneficio-item h3 {
+    font-size: 1.2rem;
+    color: #F76D12; /* Naranja */
+    margin-bottom: 0.5rem;
+}
+
+.beneficio-item p {
+    font-size: 1rem;
+    color: #555; /* Color de texto gris suave */
+    line-height: 1.5;
+}
+
+
+/* Sección Testimonios */
+.testimonios {
+    padding: 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2rem;
+    color: #F76D12;
+    margin-bottom: 1.5rem;
+}
+
+.testimonios p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.testimonios-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.testimonio-item {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow para darle profundidad */
+    transition: transform 0.3s ease-in-out;
+    width: 30%; /* Ajusta el ancho de cada tarjeta */
+}
+
+.testimonio-item:hover {
+    transform: translateY(-10px); /* Efecto hover para subir la tarjeta */
+}
+
+.testimonio-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonio-item h3 {
+    font-size: 1.2rem;
+    color: #F76D12;
+    margin-bottom: 0.5rem;
+}
+
+.testimonio-item span {
+    font-size: 0.9rem;
+    color: #777; /* Texto más suave para la descripción */
+}
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    padding: 3rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre-nosotros .content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    gap: 2rem;
+}
+
+.sobre-nosotros .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nosotros .logo img {
+    width: 150px;
+}
+
+.sobre-nosotros .texto {
+    flex: 2;
+    text-align: left;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    color: #F76D12;
+    margin-bottom: 1rem;
+}
+
+.sobre-nosotros p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Sección Misión, Visión, Valores */
+.mvv-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.mvv-item {
+    background-color: #1E3A5F;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 300px; /* Tamaño fijo para el ancho del cuadro */
+    height: 250px; /* Tamaño fijo para la altura del cuadro */
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Oculta el contenido que sobrepasa el cuadro */
+}
+
+.mvv-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.mvv-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: none;
+}
+
+.mvv-item:hover p {
+    display: block;
+    color: white;
+}
+
+.mvv-item:hover h3 {
+    display: none;
+}
+
+.mvv-item:hover {
+    transform: translateY(-10px); /* Efecto hover para subir la tarjeta */
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
